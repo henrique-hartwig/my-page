@@ -1,13 +1,11 @@
-import "./App.css"
+import MainHeader from "./components/MainHeader"
+import MenuSider from "./components/MenuSider"
 
 function App() {
   return (
     <>
-      <header>CABECALHO</header>
-      <menu>
-        <button className="bg-green-500">aaaaa</button>
-        <li className="hover:bg-green-500">bbbbb</li>
-      </menu>
+      <MainHeader />
+      <MenuSider />
     </>
   )
 }
