@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sun:hover {
+  filter: drop-shadow(0 0 2em #f5d442);
+}
