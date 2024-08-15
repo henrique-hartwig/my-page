@@ -1,7 +1,7 @@
-import "./MainHeader.css"
+import "./Header.css"
 import { SunIcon } from "@heroicons/react/24/outline"
 
-const MainHeader = () => {
+const Header = () => {
   return (
     <div className="border border-red w-full h-full flex items-center justify-end gap-24 px-12">
       My awesome resume page
@@ -16,4 +16,4 @@ const MainHeader = () => {
   )
 }
 
-export default MainHeader
+export default Header

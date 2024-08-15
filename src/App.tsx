@@ -1,14 +1,14 @@
 import "./App.css"
-import MainHeader from "./components/MainHeader"
+import Header from "./components/Header"
 import MenuSider from "./components/MenuSider"
 
 function App() {
   return (
     <div className="page">
       <div className="header border border-yellow-400">
-        <MainHeader />
+        <Header />
       </div>
-      <div className="aside m-2 border border-red-500">
+      <div className="aside border border-red-500">
         <MenuSider />
       </div>
       <div className="content boder border-purple-600">CONTENT</div>
