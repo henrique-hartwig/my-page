@@ -3,6 +3,7 @@ import "./App.css"
 import Header from "./components/Header"
 import MenuSider from "./components/MenuSider"
 import Education from "./components/Education"
+import Experiences from "./components/Experiences"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             }
           />
           <Route path="education" element={<Education />} />
+          <Route path="experiences" element={<Experiences />} />
         </Routes>
       </BrowserRouter>
       <div className="footer boder border border-black">FOOTER</div>
