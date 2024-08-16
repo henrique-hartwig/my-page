@@ -1,29 +1,22 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
 import MenuSider from "./components/MenuSider"
 import Education from "./components/Education"
 import Experiences from "./components/Experiences"
+import Home from "./components/Home"
 
 function App() {
   return (
-    <div className="page">
-      <div className="header border border-yellow-400">
-        <Header />
-      </div>
-      <div className="aside border border-red-500">
-        <MenuSider />
-      </div>
+    <div className="page h-full border-2">
+      <Header />
+      <MenuSider />
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="content boder border-purple-600">CONTENT</div>
-            }
-          />
-          <Route path="education" element={<Education />} />
-          <Route path="experiences" element={<Experiences />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/experiences" element={<Experiences />} />
         </Routes>
       </BrowserRouter>
       <div className="footer boder border border-black">FOOTER</div>

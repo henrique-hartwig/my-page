@@ -1,6 +1,6 @@
 const MenuSider = () => {
   return (
-    <div>
+    <div className="aside border border-red-500">
       MenuSider
       <ul>
         <li>Home</li>
