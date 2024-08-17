@@ -4,8 +4,10 @@
 
 .page {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 100pxr 1fr 100px;
+  height: 100vh;
+  background: linear-gradient(345deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 51%, rgba(0,212,255,1) 100%);
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
   grid-template-areas:
     'header header'
     'aside content'

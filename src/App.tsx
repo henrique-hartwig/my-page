@@ -7,7 +7,7 @@ import RoutesContent from "./components/RoutesContent"
 
 function App() {
   return (
-    <div className="page h-full border-2">
+    <div className="page border-2">
       <Header />
       <MenuSider />
       <RoutesContent />
