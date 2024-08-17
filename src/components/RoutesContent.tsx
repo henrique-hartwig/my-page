@@ -3,7 +3,7 @@ import Education from "./Education"
 import Experiences from "./Experiences"
 import Home from "./Home"
 
-const ContentRouter = () => {
+const RoutesContent = () => {
   return (
     <Routes>
       <Route path="*" element={<Home />} />
@@ -13,4 +13,4 @@ const ContentRouter = () => {
   )
 }
 
-export default ContentRouter
+export default RoutesContent
