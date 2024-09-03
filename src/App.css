@@ -2,10 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes clearUp {
+  from {
+  background: linear-gradient(345deg, rgba(6,1,78,1) 0%, rgba(9,109,121,1) 28%, rgba(0,212,255,1) 100%);
+  color: white;
+  }
+  to {
+  background: linear-gradient(345deg, rgba(6,1,78,1) 0%, rgba(9,109,121,1) 88%, rgba(0,212,255,1) 100%);
+  color: black;
+  }
+}
+
+@keyframes darkUp {
+  to {
+    background: linear-gradient(345deg, rgba(6,1,78,1) 0%, rgba(9,109,121,1) 88%, rgba(0,212,255,1) 100%);
+    color: white;
+  }
+  from {
+    background: linear-gradient(345deg, rgba(6,1,78,1) 0%, rgba(9,109,121,1) 28%, rgba(0,212,255,1) 100%);
+    color: black;
+  }
+}
+
+body.light {
+  animation: clearUp 1s ease-in forwards;
+}
+
+body.dark {
+  animation: darkUp 1s ease-in forwards;
+}
+
 .page {
   display: grid;
   height: 100vh;
-  background: linear-gradient(345deg, rgba(6,1,78,1) 0%, rgba(9,109,121,1) 58%, rgba(0,212,255,1) 100%);
+  /* background: linear-gradient(345deg, rgba(6,1,78,1) 0%, rgba(9,109,121,1) 58%, rgba(0,212,255,1) 100%); */
   grid-template-columns: 150px 1fr;
   grid-template-rows: 1fr 6fr 1fr;
   grid-template-areas:
