@@ -9,7 +9,8 @@ type StyledLiProps = {
 const StyledLi = ({ label, navigateTo }: StyledLiProps) => {
   return (
     <li
-      className="hover:border hover:rounded-xl hover:shadow-lg hover:scale-110 transition transform duration-200"
+      className="hover:border hover:rounded-xl hover:shadow-lg hover:scale-110 transition
+        transform duration-200 px-2 py-1"
       onClick={navigateTo}
     >
       {label}
@@ -17,7 +18,7 @@ const StyledLi = ({ label, navigateTo }: StyledLiProps) => {
   )
 }
 
-const MenuSider = () => {
+export const MenuSider = () => {
   const navigate = useNavigate()
 
   return (
@@ -34,5 +35,3 @@ const MenuSider = () => {
     </div>
   )
 }
-
-export default MenuSider
