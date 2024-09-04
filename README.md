@@ -15,25 +15,15 @@ My intention here is introduce myself as Software Engineer and show a lit bit ab
 
 ## How to run it locally
 TODO
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Using `bun`, it will run at `localhost:5173`
+```bash
+bun install
+bun dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 
 
 # Contact
 
 - Email: henrique2805@gmail.com
 
-- Linkedin: https://github.com/jsx-eslint/eslint-plugin-react
+- Linkedin: https://www.linkedin.com/in/henrique-montagna-hartwig-896042a4/
